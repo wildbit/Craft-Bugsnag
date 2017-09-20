@@ -20,6 +20,11 @@ class BugsnagPlugin extends BasePlugin
      */
     public function init()
     {
+        // Don’t report errors if we’re in dev mode.
+        if (craft()->config->get('devMode')) {
+          return;
+        }
+
         // Log Craft Exceptions to Bugsnag
         craft()->onException = function ($event) {
             craft()->bugsnag->notifyException($event->exception);

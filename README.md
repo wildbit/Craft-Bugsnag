@@ -36,4 +36,5 @@ It will automatically log most exceptions/errors. If you want to log a exception
 
 * Initial release
 
-Brought to you by [Fred Carlsen](http://sjelfull.no)
+Brought to you by [Fred Carlsen](http://sjelfull.no)  
+Modified for Wildbit by [Matt West](https://twitter.com/MattAntWest)

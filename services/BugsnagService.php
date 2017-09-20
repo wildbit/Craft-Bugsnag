@@ -26,7 +26,7 @@ class BugsnagService extends BaseApplicationComponent
 
         // Require Bugsnag vendor code
         require_once __DIR__.'/../vendor/autoload.php';
-        $environment = craft()->config->get('environment', 'bugsnag') ?? CRAFT_ENVIRONMENT;
+        $environment = craft()->config->get('environment', 'bugsnag');
 
         // Init Bugsnag
         $serverApiKey = craft()->config->get('serverApiKey', 'bugsnag');
